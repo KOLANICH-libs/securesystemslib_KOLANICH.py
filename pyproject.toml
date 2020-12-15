@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.2.0", "setuptools_scm[toml]>=3.4.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "securesystemslib_KOLANICH"
+readme = "ReadMe.md"
+description = "A temporary workaround for non-merging my PRs into `securesystemslib`"
+authors = [{name = "KOLANICH"}]
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Environment :: Other Environment",
+	"Intended Audience :: Developers",
+	"License :: Public Domain",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3 :: Only",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["securesystemslib_KOLANICH"]
+license = {text = "MIT AND Unlicense"}
+requires-python = ">=3.4"
+dynamic = ["version"]
+dependencies = [
+	"securesystemslib",
+	"cryptography",
+]
+
+[project.urls]
+Homepage = "https://github.com/KOLANICH-libs/securesystemslib_KOLANICH.py"
+
+[tool.setuptools]
+zip-safe = true
+
+[tool.setuptools.packages.find]
+include = ["securesystemslib_KOLANICH", "securesystemslib_KOLANICH.*"]
+
+[tool.setuptools_scm]
